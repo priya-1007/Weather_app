@@ -21,11 +21,11 @@ async function getWeather() {
         }
 
         document.getElementById("result").innerHTML = `
-            <h2>${data.name}</h2>
-            <p>Temperature: ${data.main.temp}°C</p>
-            <p>Weather: ${data.weather[0].description}</p>
-            <p>Humidity: ${data.main.humidity}%</p>
-        `;
+    <h2>${data.name}</h2>
+    <p>Temperature: ${data.main.temp}°C</p>
+    <p>Weather: ${data.weather[0].description}</p>
+    <p>Humidity: ${data.main.humidity}%</p>
+`;
     } catch (error) {
         document.getElementById("result").innerHTML = "Error fetching data";
     }
