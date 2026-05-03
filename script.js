@@ -7,7 +7,7 @@ async function getWeather() {
     }
 
     let apiKey = "8d0661da0eb3faaab5343be82aa742b6";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=8d0661da0eb3faaab5343be82aa742b6&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;`;
 
     try {
         let response = await fetch(url);
