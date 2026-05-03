@@ -13,7 +13,7 @@ async function getWeather() {
         let response = await fetch(url);
         let data = await response.json();
 
-        // handle errors properly
+    
         if (data.cod !== 200) {
             document.getElementById("result").innerHTML = data.message;
             return;
