@@ -1,5 +1,4 @@
 async function getWeather() {
-    alert("working");
     let city = document.getElementById("city").value;
 
     if (city === "") {
