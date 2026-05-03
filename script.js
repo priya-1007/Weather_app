@@ -6,7 +6,7 @@ async function getWeather() {
         return;
     }
 
-    let apiKey = "YOUR_API_KEY"; // replace this
+    let apiKey = "8d0661da0eb3faaab5343be82aa742b6"; // replace this
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
